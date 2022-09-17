@@ -14,6 +14,7 @@ import logo from "$/assets/logo.svg";
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/call-cloud">Call Cloud Function</RouterLink>
       </nav>
     </div>
   </header>

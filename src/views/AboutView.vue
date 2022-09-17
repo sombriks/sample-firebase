@@ -1,16 +1,17 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
-    <button @click="helloStore.increment">Counter: {{ helloStore.count }}</button>
-    <p>Doubled is {{helloStore.doubleCount}}</p>
+    <button @click="helloStore.increment">
+      Counter: {{ helloStore.count }}
+    </button>
+    <p>Doubled is {{ helloStore.doubleCount }}</p>
   </div>
 </template>
 
 <script setup>
-import {useCounterStore} from "../stores/counter"
+import { useCounterStore } from "../stores/counter";
 
-const helloStore = useCounterStore()
-
+const helloStore = useCounterStore();
 </script>
 
 <style>

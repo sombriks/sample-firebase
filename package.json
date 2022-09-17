@@ -8,6 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "deploy-functions": "firebase deploy --only functions",
+    "deploy-all": "firebase deploy",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "repository": {
