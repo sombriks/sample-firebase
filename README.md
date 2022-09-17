@@ -24,7 +24,13 @@ change `hosting>public` folder from _public_ to _dist_ in
 [firebase.json](firebase.json).
 
 create an application on firebase web console and put the info inside a .env
-file
+file. also add it as secrets in github if you plan to use actions to build and
+deploy.
+
+## known issues
+
+- if you pan ot use firebase functions you will need a blaze plan for your
+firebase project.
 
 ## next steps
 
