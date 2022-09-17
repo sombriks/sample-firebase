@@ -2,7 +2,11 @@ import { createApp } from "vue";
 import { createPinia } from "pinia";
 
 import { initializeApp } from "firebase/app";
-import { getFunctions, httpsCallable } from 'firebase/functions';
+import {
+  getFunctions,
+  connectFunctionsEmulator,
+  httpsCallable,
+} from "firebase/functions";
 
 import App from "./App.vue";
 import router from "./router";
@@ -20,6 +24,8 @@ const fb = initializeApp({
 });
 
 const functions = getFunctions(fb);
+
+if (import.meta.env.DEV) connectFunctionsEmulator(functions, "localhost", 5002);
 
 httpsCallable(functions, "helloWorld")().then((ret) => {
   console.log(ret);
