@@ -16,6 +16,9 @@ const isDev = ref(import.meta.env.DEV)
       <p v-if="isDev">
         <a href="http://localhost:4000" target="fbEmulator">Open emulator ui</a>
       </p>
+      <p>
+        <a href="https://github.com/sombriks/sample-firebase" target="onGitHub">See on github</a>
+      </p>
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
