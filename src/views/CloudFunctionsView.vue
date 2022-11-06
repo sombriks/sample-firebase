@@ -1,16 +1,19 @@
 <template>
   <div>
-    <h1>Call a cloud function</h1>
-    <button @click="callCloud">Call</button>
+    <h1>Call cloud function</h1>
+    <p>
+      <button @click="callCloud">Call</button>
+    </p>
     <p>{{ hello }}</p>
   </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
-import { httpsCallable } from "firebase/functions";
+// https://firebase.google.com/docs/functions/http-events
+import {ref} from "vue";
+import {httpsCallable} from "firebase/functions";
 
-import { fbFunctions } from "../config/firebase";
+import {fbFunctions} from "../config/firebase";
 
 const hello = ref("");
 const callCloud = () => {
