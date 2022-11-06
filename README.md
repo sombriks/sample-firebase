@@ -39,5 +39,12 @@ if you plan to use actions to build and deploy.
 
 ## next steps
 
-- how to combine emulators structure into modern frontend tools
-- how to properly setup github action to build and deploy
+- [X] how to combine emulators structure into modern frontend tools
+- [X] how to properly setup GitHub action to build and deploy
+- [X] the use of cloud functions
+- [X] the use of firebase authentication
+- [X] use of firebase hosting
+- [ ] use of file store
+- [ ] the use of firestore
+- [ ] use of realtime database
+- [ ] use of pub/sub

@@ -2,6 +2,9 @@
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "$/components/HelloWorld.vue";
 import logo from "$/assets/logo.svg";
+import {ref} from "vue";
+
+const isDev = ref(import.meta.env.DEV)
 </script>
 
 <template>
@@ -10,7 +13,9 @@ import logo from "$/assets/logo.svg";
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-
+      <p v-if="isDev">
+        <a href="http://localhost:4000" target="fbEmulator">Open emulator ui</a>
+      </p>
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
