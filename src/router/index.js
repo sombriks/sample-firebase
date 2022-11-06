@@ -22,6 +22,11 @@ const router = createRouter({
       name: "callCloud",
       component: () => import("../views/CloudFunctionsView.vue"),
     },
+    {
+      path: "/call-authenticate",
+      name: "callAuthenticate",
+      component: () => import("../views/AuthenticateView.vue"),
+    },
   ],
 });
 

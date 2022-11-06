@@ -8,7 +8,7 @@
 
 <script setup>
 import { ref } from "vue";
-import { httpsCallable } from "@firebase/functions";
+import { httpsCallable } from "firebase/functions";
 
 import { fbFunctions } from "../config/firebase";
 
