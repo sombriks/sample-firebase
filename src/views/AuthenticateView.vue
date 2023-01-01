@@ -1,9 +1,9 @@
 <template>
   <div>
     <h1>Authenticate</h1>
-    <button @click="fbLogin">Login/Logout</button>
-    <p v-if="user && user.uid">
-      Hello, {{ user.displayName }}!
+    <button @click="userStore.fbLogin">Login/Logout</button>
+    <p v-if="userStore?.user && userStore?.user?.uid">
+      Hello, {{ userStore?.user?.displayName }}!
     </p>
     <p v-else>
       Not logged
@@ -13,25 +13,8 @@
 
 <script setup>
 // https://firebase.google.com/docs/auth/web/manage-users#get_a_users_profile
-import {ref} from "vue"
-import {fbAuth} from "../config/firebase"
-import {GoogleAuthProvider, signInWithPopup, signOut} from "firebase/auth"
+import { useUserStore } from "../stores/user";
 
-const user = ref({})
-const fbLogin = e => {
-  console.log(e)
-  if (!user.value || !user.value.uid) {
-    const provider = new GoogleAuthProvider();
-    signInWithPopup(fbAuth, provider).then(result => {
-      console.log(result)
-      user.value = result.user;
-    })
-  } else {
-    signOut(fbAuth).then((e) => {
-      user.value = {};
-      console.log(e)
-      console.log("user sign out");
-    });
-  }
-}
+const userStore = useUserStore();
+
 </script>
