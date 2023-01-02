@@ -16,7 +16,11 @@
     "type": "git",
     "url": "git+https://github.com/sombriks/sample-firebase.git"
   },
-  "keywords": ["vue", "vite", "firebase"],
+  "keywords": [
+    "vue",
+    "vite",
+    "firebase"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
