@@ -1,10 +1,11 @@
 {
   "name": "sample-firebase",
   "version": "1.0.0",
-  "description": "",
+  "description": "sample project to experiment and exercise with firebase stuff",
   "main": "index.js",
   "scripts": {
     "emulators": "firebase emulators:start",
+    "emulators:stop": "lsof -t -i:9099 -i:5002 -i:8088 -i:9009 -i:5001 -i:5002 -i:8185 -i:9199 -i:9299 -i:4400 -i:4500 | xargs kill -9",
     "dev": "vite",
     "build": "vite build",
     "deploy-functions": "firebase deploy --only functions",
@@ -15,7 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/sombriks/sample-firebase.git"
   },
-  "keywords": [],
+  "keywords": ["vue", "vite", "firebase"],
   "author": "",
   "license": "ISC",
   "bugs": {

@@ -24,6 +24,7 @@ const isDev = ref(import.meta.env.DEV)
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/call-cloud">Call Cloud Function</RouterLink>
         <RouterLink to="/call-authenticate">Call autenticate</RouterLink>
+        <RouterLink to="/call-firestore">Call Firestore</RouterLink>
       </nav>
     </div>
   </header>
