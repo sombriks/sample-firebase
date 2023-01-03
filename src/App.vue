@@ -1,7 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "$/components/HelloWorld.vue";
-import logo from "$/assets/logo.svg";
+import HelloWorld from "./components/HelloWorld.vue";
+import logo from "./assets/logo.svg";
 import {ref} from "vue";
 
 const isDev = ref(import.meta.env.DEV)
@@ -16,6 +16,7 @@ const isDev = ref(import.meta.env.DEV)
       <p v-if="isDev">
         <a href="http://localhost:4000" target="fbEmulator">Open emulator ui</a>
       </p>
+      <p>&nbsp;&nbsp;&nbsp;</p>
       <p>
         <a href="https://github.com/sombriks/sample-firebase" target="onGitHub">See on github</a>
       </p>
