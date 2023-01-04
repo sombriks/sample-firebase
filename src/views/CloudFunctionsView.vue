@@ -10,10 +10,10 @@
 
 <script setup>
 // https://firebase.google.com/docs/functions/http-events
-import {ref} from "vue";
-import {httpsCallable} from "firebase/functions";
+import { ref } from "vue";
+import { httpsCallable } from "firebase/functions";
 
-import {fbFunctions} from "../config/firebase";
+import { fbFunctions } from "../config/firebase";
 
 const hello = ref("");
 const callCloud = () => {

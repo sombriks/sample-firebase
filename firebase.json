@@ -39,7 +39,7 @@
       "port": 9099
     },
     "functions": {
-      "port": 5002
+      "port": 5006
     },
     "firestore": {
       "port": 8088
@@ -48,7 +48,7 @@
       "port": 9009
     },
     "hosting": {
-      "port": 5001
+      "port": 5005
     },
     "pubsub": {
       "port": 8185

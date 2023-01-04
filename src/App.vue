@@ -2,9 +2,9 @@
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
 import logo from "./assets/logo.svg";
-import {ref} from "vue";
+import { ref } from "vue";
 
-const isDev = ref(import.meta.env.DEV)
+const isDev = ref(import.meta.env.DEV);
 </script>
 
 <template>
@@ -18,7 +18,9 @@ const isDev = ref(import.meta.env.DEV)
       </p>
       <p>&nbsp;&nbsp;&nbsp;</p>
       <p>
-        <a href="https://github.com/sombriks/sample-firebase" target="onGitHub">See on github</a>
+        <a href="https://github.com/sombriks/sample-firebase" target="onGitHub"
+          >See on github</a
+        >
       </p>
       <nav>
         <RouterLink to="/">Home</RouterLink>

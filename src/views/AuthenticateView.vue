@@ -5,9 +5,7 @@
     <p v-if="userStore?.user && userStore?.user?.uid">
       Hello, {{ userStore?.user?.displayName }}!
     </p>
-    <p v-else>
-      Not logged
-    </p>
+    <p v-else>Not logged</p>
   </div>
 </template>
 
@@ -16,5 +14,4 @@
 import { useUserStore } from "../stores/user";
 
 const userStore = useUserStore();
-
 </script>

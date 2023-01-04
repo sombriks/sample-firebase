@@ -33,18 +33,16 @@ if you plan to use actions to build and deploy.
 
 - if you plan to use firebase functions you will need a
   [blaze plan](https://firebase.google.com/pricing) for your firebase project.
-- [github action](https://github.com/FirebaseExtended/action-hosting-deploy)
-  only publishes the hosting project. add `firebase deploy --only functions` as
-  a npm script and maybe it can be automated in the future.
+- [GitHub action](https://github.com/FirebaseExtended/action-hosting-deploy)
+  only publishes the hosting project. complete deploy running locally only.
 
 ## next steps
 
 - [X] how to combine emulators structure into modern frontend tools
-- [X] how to properly setup GitHub action to build and deploy
 - [X] the use of cloud functions
 - [X] the use of firebase authentication
 - [X] use of firebase hosting
+- [X] the use of firestore / realtime database
 - [ ] use of file store
-- [ ] the use of firestore
-- [ ] use of realtime database
 - [ ] use of pub/sub
+- [ ] how to properly setup GitHub action to build and deploy
