@@ -48,11 +48,11 @@ const byMe = ref(false);
 const userStore = useUserStore();
 
 const list = async () => {
-  const w = byMe.value ? where("uid", "==", userStore.user.uid) : undefined;
+  const simpleWhere = byMe.value ? where("uid", "==", userStore.user.uid) : undefined;
   const querySnapshot = await getDocs(
     query(
       collection(db, "todos"),
-      w,
+      simpleWhere,
       orderBy("tarefa"),
       limit(20)
     )
@@ -92,6 +92,14 @@ const listMy = () => {
 };
 
 const novaMy = () => {
+
+}
+
+const editMy = () => {
+
+}
+
+const removeMy = () => {
 
 }
 </script>
