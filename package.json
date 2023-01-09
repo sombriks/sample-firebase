@@ -6,7 +6,7 @@
   "scripts": {
     "emulators": "firebase emulators:start",
     "emulators:stop": "lsof -t -i:9099 -i:5006 -i:8088 -i:9009 -i:5005 -i:8185 -i:9199 -i:9299 | xargs kill -9",
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "deploy-functions": "firebase deploy --only functions",
     "deploy-all": "firebase deploy",

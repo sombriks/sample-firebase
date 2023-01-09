@@ -22,6 +22,9 @@
     <p><small>see
       <a href="https://firebase.google.com/docs/firestore/security/rules-query"
          target="_blank">rules-query</a> for more details</small></p>
+    <ul>
+
+    </ul>
   </div>
 </template>
 
@@ -42,6 +45,7 @@ import { db } from "../config/firebase";
 import { useUserStore } from "../stores/user";
 
 const todos = ref([]);
+const myTodos = ref([]);
 const tarefa = ref("");
 const byMe = ref(false);
 
