@@ -4,12 +4,12 @@ service cloud.firestore {
   match /databases/{database}/documents {
 
     match /todos/{document=**} {
-      allow read: if true;
+      allow read: if request.query.limit <= 20;
       allow write: if request.auth != null;
     }
 
     match /my-todos/{document=**} {
-      allow read: if request.auth != null && request.auth.uid == resource.data.uid;
+      allow read: if request.query.limit <= 20 && request.auth != null && request.auth.uid == resource.data.uid;
       allow write: if request.auth != null && request.auth.uid == resource.data.uid;
     }
   }
