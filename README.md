@@ -2,6 +2,15 @@
 
 testing everything firebase has
 
+## how to run this project
+
+```bash
+npm install
+npm run emulators
+# do this into another terminal
+npm run dev
+```
+
 ## how to create a project skeleton like this
 
 ```bash
